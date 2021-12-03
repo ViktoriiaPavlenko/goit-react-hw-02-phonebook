@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 const ContactsListItem = ({ contact, onDeleteContact }) => (
     <>
-        <span>{contact.name}: {contact.number}</span>
+        <span className={styles.info}>{contact.name}: {contact.number}</span>
         <button className={styles.button} type="button" onClick={() =>
             onDeleteContact(contact.id)}>Delete</button>
     </>
